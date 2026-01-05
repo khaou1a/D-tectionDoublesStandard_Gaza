@@ -19,13 +19,11 @@ This project analyzes and detects inconsistencies in standards and policies.
 - [6_analyse_de_sentiment.ipynb](6_analyse_de_sentiment.ipynb) — analyse de tonalité ciblée
 - `corpus/` — fichiers JSON produits et intermédiaires
 - `images/` — graphiques générés (t-SNE, nuages de mots...)
-- `index.html`, `app.js`, `components/` — interface web statique (UI et composants React-like)
 
 ## Comment lancer
 1. Installer les dépendances (exemples) :
    - Python 3.8+, Jupyter
    - pip install jupyter pandas numpy matplotlib seaborn gensim spacy nltk wordcloud textblob
-   - ou pip install -r requirements.txt si vous ajoutez un fichier de dépendances.
 
 2. Exécuter les notebooks dans l'ordre recommandé (ouvrir avec JupyterLab / Notebook) :
    - Lancer Jupyter : `jupyter lab` ou `jupyter notebook`
@@ -38,5 +36,4 @@ This project analyzes and detects inconsistencies in standards and policies.
    - Graphiques et images : dossier `images/`
 
 Notes :
-- Pour exécuter automatiquement certaines étapes, regardez les blocs `if __name__ == "__main__":` dans les notebooks (ex. [3_pretraitement.ipynb](3_pretraitement.ipynb) appelle [`traiter_corpus`](3_pretraitement.ipynb)).
-- Voir les fonctions clés : [`executer_pipeline_expert`](2_Post-Scraping.ipynb), [`traiter_corpus`](3_pretraitement.ipynb), [`entrainer_modele_lab8`](5_analyse_sementique.ipynb).
+- Pour exécuter l'interface il faut demarer cette commande 
